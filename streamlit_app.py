@@ -9,7 +9,7 @@ df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/pe
 
 with st.expander ('Data'):
   st.write("X")
-  X_raw = df.drop('', axis=1)
+  X_raw = df.drop('species', axis=1)
   st.dataframe(X_raw)
 
 
