@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.title('Medical cost')
 
@@ -15,3 +16,7 @@ st.dataframe(X_raw)
 st.write ("y")
 y_raw = df.species
 st.dataframe(y_raw)
+
+with st.sidebar:
+  st.header("Введите признаки: ")
+  island = st.selection('Island', ('Torgersen', 'Dream', 'Biscoe'))
