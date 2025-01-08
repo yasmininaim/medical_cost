@@ -3,9 +3,9 @@ import pandas as pd
 
 st.title('Medical cost')
 
-st.write('Hello world!')
+st.write('Hasanova Yasmin')
 
-df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
+df = pd.read_csv("medical_cost.csv")
 
 with st.expander ('Data'):
   st.write("X")
